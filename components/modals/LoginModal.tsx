@@ -2,6 +2,8 @@ import { signIn } from "next-auth/react";
 import { useCallback, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import ReCAPTCHA from "react-google-recaptcha";
+import { ReCAPTCHAProps } from "react-google-recaptcha/lib/esm/recaptcha-wrapper";
 
 import useLoginModal from "@/hooks/useLoginModal";
 import useRegisterModal from "@/hooks/useRegisterModal";
@@ -88,6 +90,7 @@ const LoginModal = () => {
         value={password}
         disabled={isLoading}
       />
+      <ReCAPTCHA sitekey="6LcSkgEnAAAAAHhydAVIWsPERWVda_Vz69xzAuDo" />
       <div className="text-sm">
         <h3
           className="subtitle-4"
