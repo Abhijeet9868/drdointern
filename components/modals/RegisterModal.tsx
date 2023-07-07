@@ -5,8 +5,7 @@ import { signIn } from "next-auth/react";
 
 import useLoginModal from "@/hooks/useLoginModal";
 import useRegisterModal from "@/hooks/useRegisterModal";
-import ReCAPTCHA from "react-google-recaptcha";
-import { ReCAPTCHAProps } from "react-google-recaptcha/lib/esm/recaptcha-wrapper";
+import ReCAPTCHA, { ReCAPTCHAProps } from "react-google-recaptcha";
 
 import Input from "../Input";
 import Modal from "../Modal";

@@ -2,8 +2,7 @@ import { signIn } from "next-auth/react";
 import { useCallback, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import ReCAPTCHA from "react-google-recaptcha";
-import { ReCAPTCHAProps } from "react-google-recaptcha/lib/esm/recaptcha-wrapper";
+import ReCAPTCHA, { ReCAPTCHAProps } from "react-google-recaptcha";
 
 import useLoginModal from "@/hooks/useLoginModal";
 import useRegisterModal from "@/hooks/useRegisterModal";
